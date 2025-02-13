@@ -15,6 +15,7 @@ import {
 } from '@mantine/core';
 import { IconDatabase, IconSearch, IconUserCircle, IconRocket } from '@tabler/icons-react';
 import useAuthStore from '../../store/app.store';
+import bgImage from '../../assets/bg.jpg';
 
 interface Feature {
   icon: React.ComponentType<any>;
@@ -190,7 +191,7 @@ export default function LandingPage() {
     <div className={classes.wrapper}>
       <Box className={classes.backgroundContainer}>
         <img
-          src="https://i.imgur.com/HKR8R8N.jpeg" // Your Star Wars background image URL
+          src={bgImage}
           alt="Star Wars Background"
           className={classes.backgroundImage}
         />

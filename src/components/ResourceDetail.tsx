@@ -1,4 +1,3 @@
-// src/components/ResourceDetail.tsx
 import { FC } from 'react';
 import { useParams } from 'react-router-dom';
 import { Card, Group, Text, Badge, Title, Container, Grid, LoadingOverlay } from '@mantine/core';
@@ -8,7 +7,6 @@ import { Character, Planet, ResourceType, ApiResponse } from '../types';
 const ResourceDetail: FC = () => {
   const { type, id } = useParams<{ type: ResourceType; id: string }>();
 
-  
   const { data: resource, isLoading } = useApi<Character | Planet>(
     type && id ? `/${type}/${id}` : null
   );
