@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { Button, Paper, Title, Container, createStyles, Image, Text, Divider } from '@mantine/core';
 import { useGoogleLogin } from '@react-oauth/google';
 import useAuthStore from '../store/app.store';
-import starWarsBackground from '../assets/freepik__upload__44163.png';
+import starWarsBackground from '../assets/login_banner.png';
 
 const useStyles = createStyles((theme) => ({
   wrapper: {

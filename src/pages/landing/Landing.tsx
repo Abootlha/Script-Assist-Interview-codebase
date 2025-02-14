@@ -15,7 +15,7 @@ import {
 } from '@mantine/core';
 import { IconDatabase, IconSearch, IconUserCircle, IconRocket } from '@tabler/icons-react';
 import useAuthStore from '../../store/app.store';
-import bgImage from '../../assets/bg.jpg';
+import bgImage from '../../assets/bg.svg';
 
 interface Feature {
   icon: React.ComponentType<any>;
